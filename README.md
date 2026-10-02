@@ -11,8 +11,9 @@ and exclusions.
 
 ## Stacked Window Navigation
 
-Hold <kbd>Super</kbd> and scroll the mouse wheel over overlapping normal windows to cycle focus through the windows
-under the pointer. Scrolling down selects the next window behind the focused one; scrolling up cycles in reverse.
+Hold <kbd>Ctrl</kbd> + <kbd>Super</kbd> and scroll the mouse wheel over overlapping normal windows to cycle focus
+through the windows under the pointer. Scrolling down selects the next window behind the focused one; scrolling up
+cycles in reverse.
 
 ### Special Focus Windows
 

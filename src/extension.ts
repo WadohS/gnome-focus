@@ -61,7 +61,12 @@ export default class GnomeFocus extends Extension {
   };
 
   private cycle_stacked_windows = (_actor: Clutter.Actor, event: Clutter.Event): boolean => {
-    if (event.type() !== Clutter.EventType.SCROLL || !(event.get_state() & Clutter.ModifierType.SUPER_MASK)) {
+    const modifiers = event.get_state();
+    if (
+      event.type() !== Clutter.EventType.SCROLL ||
+      !(modifiers & Clutter.ModifierType.SUPER_MASK) ||
+      !(modifiers & Clutter.ModifierType.CONTROL_MASK)
+    ) {
       return Clutter.EVENT_PROPAGATE;
     }
 
